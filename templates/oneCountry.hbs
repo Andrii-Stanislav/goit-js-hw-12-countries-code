@@ -1,0 +1,13 @@
+<li class="countriesItem">
+    <p>{{name}}</p>
+    <div>
+        <p><span>Capital: </span>{{capital}}</p>
+        <p><span>Population: </span>{{population}}</p>
+        <ul>
+            {{#each languages}}
+            <li>{{this.name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <img src="{{flag}}" alt="{{name}} flag" width="300px">
+</li>
